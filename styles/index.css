@@ -110,7 +110,11 @@ nav ul li a{
 
 /* cards */
 .card-container{
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 20px;
+  row-gap: 30px;
 }
 
 .card{
@@ -188,5 +192,30 @@ nav ul li a{
   }
   .banner-detail p{
     font-size: 14px;
+  }
+
+  /* Our Flowers */
+  .our-flowers{
+    max-width: 393px;
+  }
+  .card{
+    /* border: 2px solid orange; */
+    max-width: 170px;
+  }
+    .card img{
+      max-width: 100%;
+    }
+  .card-container{
+    grid-template-columns: repeat(2,5fr);
+  }
+  .flower-head h3{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  .flower-head p{
+    font-size: 14px;
+  }
+  .card button{
+    width: 100%;
   }
 }
