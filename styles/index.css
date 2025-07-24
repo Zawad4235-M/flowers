@@ -180,6 +180,109 @@ nav ul li a{
  color: rgba(0, 0, 0, 0.5);
 }
 
+/* latest deals */
+.latest-deals{
+  max-width: 1140px;
+  margin: 0 auto;
+  /* text-align: center; */
+  /* border: 1px solid orange; */
+  margin-top: 130px;
+}
+.deal-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.deal-info h3{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.deal-info p{
+  font-size: 22px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+.grid-img a{
+  color: white;
+  z-index: 2;
+}
+.bloom-plant{
+  position: relative;
+  grid-area: bloom;
+  max-width: 365px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 14px;
+  background-image: url(../assets/deal-bloom.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.overlay {
+  position: absolute;
+  inset: 0; /* fills the container */
+  background-color: rgba(0, 0, 0, 0.4); 
+  z-index: 1;
+  border-radius: 14px;
+}
+.bloom-plant h4{
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.zabo-plant{
+  grid-area: zabo;
+  max-width: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 409px;
+  border-radius: 14px;
+  background-image: url(../assets/deal-zabo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.zabo-plant h3{
+  font-size: 2.5rem;
+  font-weight: bold;
+  z-index: 2;
+}
+.zabo-plant a{
+  font-size: 2rem;
+  font-weight: 600;
+}
+.ana-plant{
+  grid-area: ana;
+  max-width: 365px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 14px;
+  background-image: url(../assets/deal-ana.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.grid-img{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-areas: 
+  "bloom zabo zabo"
+  "ana zabo zabo";
+  gap: 10px;
+  margin-top: 100px;
+}
 
 
 
@@ -286,5 +389,38 @@ nav ul li a{
   .main-img{
     max-width: 390px;
     /* width: 100%; */
+  }
+
+  /* latest deal */
+  .latest-deals{
+    margin-top: 300px;
+  }
+  .grid-img{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: 
+    "bloom"
+    "ana"
+    "zabo";
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+  }
+  .bloom-plant{
+    max-width: 460px;
+    height: 185px;
+  }
+  .zabo-plant{
+    max-width: 460px;
+    height: 185px;
+  }
+  .ana-plant{
+    max-width: 460px;
+    height: 185px;
+  }
+  .zabo-plant h3{
+    font-size: 20px;
+  }
+  .zabo-plant a{
+    font-size: 1rem;
   }
 }
