@@ -328,7 +328,57 @@ input[type="email"]
   font-size: 1rem;
 }
 
+/* footer */
 
+footer{
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  /* border: 1px solid orange; */
+  margin-top: 50px;
+}
+ .footer-list{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+ }
+ footer ul
+ {
+  list-style: none;
+ }
+ footer ul li a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+ }
+  .ul-1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .ul-2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-logo p{
+    font: 22px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 15px;
+  }
+  .footer-logo{
+    max-width: 360px;
+  }
+   .link{
+    max-width: 36px;
+    height: 36px;
+   }
+  .contact-logo{
+    display: flex;
+    gap: 25px;
+  }
 
 
 
@@ -487,4 +537,25 @@ input[type="email"]
   .subscribe button{
     width: 103px;
   }
+
+  /* footer */
+  footer{
+    max-width: 393px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .footer-list{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 10px;
+}
+.footer-list{
+  margin-top: -80px;
+}
+
+.contact-logo{
+
+  margin-top: -55px;
+}
+
 }
